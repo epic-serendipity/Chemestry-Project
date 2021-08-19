@@ -2,7 +2,7 @@ from shutil import move
 from glob import glob
 import os
 
-print (glob(r'.\*.*'), '/n')
+print (glob(r'.\*.*'))
 files = [('Pictures', glob(r'.\*jpg')),
          ('Pictures', glob(r'.\*png')),
          ('Pictures', glob(r'.\*jfif')),
@@ -24,7 +24,8 @@ files = [('Pictures', glob(r'.\*jpg')),
          ('Shortcuts', glob(r'.\*lnk')),
          ('C++ Files', glob(r'.\*cpp')),
          ('C++ Files', glob(r'.\*cp')),
-         ('Web Picture', glob(r'.\*svg'))]
+         ('Web Picture', glob(r'.\*svg')),
+         ('Music', glob(r'.\*mp3'))]
 for x in files:
     counter = 0
     file_path = '.\\' + x[0]
