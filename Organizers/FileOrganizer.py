@@ -12,6 +12,7 @@ files = [('Pictures', glob(r'.\*jpg')),
          ('Text Files', glob(r'.\*md')),
          ('Text Files', glob(r'.\*doc')),
          ('Text Files', glob(r'.\*docx')),
+         ('Logs', glob(r'.\*log')),
          ('Slides', glob(r'.\*odp')),
          ('Slides', glob(r'.\*pptx')),
          ('Web Pictures', glob(r'.\*webp')),
@@ -25,7 +26,10 @@ files = [('Pictures', glob(r'.\*jpg')),
          ('C++ Files', glob(r'.\*cpp')),
          ('C++ Files', glob(r'.\*cp')),
          ('Web Picture', glob(r'.\*svg')),
-         ('Music', glob(r'.\*mp3'))]
+         ('Music', glob(r'.\*mp3')),
+         ('Java Files', glob(r'.\*java')),
+         ('Java Files', glob(r'.\*bluej')),
+         ('Registration Entries', glob(r'.\*reg'))]
 for x in files:
     counter = 0
     file_path = '.\\' + x[0]
